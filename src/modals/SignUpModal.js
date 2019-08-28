@@ -18,7 +18,7 @@ class SignUpModal extends Component {
   handleSignUp = (e) => {
   	e.preventDefault()
 
-    fetch(('http://localhost:3000/api/v1/users'), {
+    fetch(('https://ang-chingu-api.herokuapp.com/api/v1/users'), {
       method: 'POST',
       headers: {
         "Content-Type": "application/json",

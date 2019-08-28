@@ -21,7 +21,7 @@ class Note extends Component {
   }
 
   handleDelete = () => {
-  	fetch('http://localhost:3000/api/v1/notes/' + this.props.id, {
+  	fetch('https://ang-chingu-api.herokuapp.com/api/v1/notes/' + this.props.id, {
       method: "DELETE",
       headers: {
         Authorization: `Bearer ${localStorage.token}`
@@ -42,7 +42,7 @@ class Note extends Component {
   	  editing: false
   	})
 
-  	fetch(('http://localhost:3000/api/v1/notes/' + this.props.id), {
+  	fetch(('https://ang-chingu-api.herokuapp.com/api/v1/notes/' + this.props.id), {
         method: "PATCH",
         headers: {
           "Content-Type": "application/json",

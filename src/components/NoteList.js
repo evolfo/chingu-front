@@ -10,7 +10,7 @@ class NoteList extends Component {
 
   componentDidMount() {
     if(localStorage.id) {
-      fetch('http://localhost:3000/api/v1/users/' + localStorage.id, {
+      fetch('https://ang-chingu-api.herokuapp.com/api/v1/users/' + localStorage.id, {
         "method": 'GET',
         "headers": {
           "Content-Type": "application/json",
@@ -29,7 +29,7 @@ class NoteList extends Component {
 
   componentDidUpdate() {
   	if(localStorage.id) {
-      fetch('http://localhost:3000/api/v1/users/' + localStorage.id, {
+      fetch('https://ang-chingu-api.herokuapp.com/api/v1/users/' + localStorage.id, {
         "method": 'GET',
         "headers": {
           "Content-Type": "application/json",

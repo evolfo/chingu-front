@@ -19,7 +19,7 @@ class NoteForm extends Component {
     e.preventDefault()
 
     if(localStorage.token) {
-      fetch(('http://localhost:3000/api/v1/notes'), {
+      fetch(('https://ang-chingu-api.herokuapp.com/api/v1/notes'), {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
